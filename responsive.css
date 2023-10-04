@@ -1,0 +1,62 @@
+@media (max-width: 37.5rem) {
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 0;
+      padding: 0 1.25rem;
+    }
+  
+    .content h3 {
+      font-size: 1rem;
+    }
+  
+    .main-wrapper {
+      padding: 1.25rem 0;
+    }
+  
+    .main div {
+      width: 15%;
+    }
+  
+    .main .number {
+      font-size: 3.125rem;
+    }
+  
+    .main .colon {
+      font-size: 1rem;
+    }
+  
+    .bg-elem {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 25rem) {
+    .container {
+      padding: 0 .625rem;
+    }
+  
+    .content h3 {
+      font-size: .875rem;
+    }
+  
+    .main-wrapper {
+      padding: .625rem 0;
+    }
+  
+    .main-wrapper .head {
+      padding: 0 1.25rem;
+    }
+  
+    .main .number {
+      font-size: 2.5rem;
+    }
+  
+    .main .colon {
+      font-size: .75rem;
+    }
+  }
+  
+  
