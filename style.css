@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p::selection {
+  color: red;
+  box-shadow: 0 .625rem .625rem rgba(0, 0, 0, 0.2);
+  background: rgb(12, 0, 250);
+  background: linear-gradient(90deg, rgba(12, 0, 250, 1) 0%, rgba(250, 0, 0, 1) 100%);
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef1f6;
+  /* overflow: hidden; */
+  background: rgb(12, 0, 250);
+  background: linear-gradient(90deg, rgba(12, 0, 250, 1) 0%, rgba(250, 0, 0, 1) 100%);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  min-height: 32rem;
+  padding: 3.75rem;
+  border-radius: .625rem;
+  color: #fff;
+  box-shadow: 0 .625rem .625rem rgba(0, 0, 0, 0.2);
+  background: rgb(12, 0, 250);
+  background: linear-gradient(90deg, rgba(12, 0, 250, 1) 0%, rgba(250, 0, 0, 1) 100%);
+}
+
+.wrapper {
+  background: rgba( 0, 0, 0, 0.95 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1.875rem 0;
+  border-radius: .625rem;
+  margin-top: .9375rem;
+  box-shadow: 0 .5rem 2rem 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(.0938rem);
+  -webkit-backdrop-filter: blur(.0938rem);
+  border-radius: .625rem;
+  transition: all 0.3s ease;
+  
+}
+
+p,
+i {
+  font-size: 0.625rem;
+  font-weight: 200;
+  color: #ffffffb0;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.content h3 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1.5625rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+.wrapper:hover {
+  box-shadow: none;
+  transform: scale(1.01);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem;
+}
+
+.main div {
+  width: 20%;
+  text-align: center;
+}
+
+.main .number {
+  position: relative;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+}
+
+.main .colon {
+  font-size: 1.25rem;
+}
+
+.btns {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.625rem;
+
+}
+
+.btn {
+  margin-top: 7rem;
+  padding: .625rem 3.25rem;
+  border-radius: .3125rem;
+  color: #fff;
+  border: none;
+  font-size: .75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba( 0, 0, 0, 0.95 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.btn:hover{
+  background-color: rgb(244, 244, 244);
+  color: black;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.laps {
+  position: relative;
+  max-height: 6.25rem;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .625rem;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+}
+
+.laps::-webkit-scrollbar {
+  width: .3125rem;
+}
+
+.laps::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: .625rem;
+}
+
+.laps::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: .625rem;
+}
+
+.lap {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: .625rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: .625rem;
+  border: .0625rem solid rgba(255, 255, 255, 0.18);
+}
+
+.lap:last-child {
+  border-bottom: none;
+}
+
+.lap.active p {
+  color: #fff;
+}
+
+.bg-elem {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 5rem;
+  height: 5rem;
+  transform: rotate(45deg);
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(.0938rem);
+  -webkit-backdrop-filter: blur(.0938rem);
+  border-radius: .625rem;
+  animation: bg-elem 10s linear infinite;
+  transition: all 0.3s ease;
+}
+
+.bg-elem:hover {
+  animation-play-state: paused;
+  box-shadow: none;
+}
+
+.bg-elem:nth-child(2) {
+  top: 20%;
+  left: 80%;
+  width: 6.25rem;
+  height: 6.25rem;
+  animation-duration: 30s;
+}
+
+.bg-elem:nth-child(3) {
+  top: 15%;
+  left: 10%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  animation-duration: 20s;
+}
+
+@keyframes bg-elem {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(45deg) translate(1.25rem, 1.25rem);
+  }
+
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+}
